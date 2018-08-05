@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EasyShop</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/montserrat.css" rel="stylesheet" type="text/css">
+    <link href='./css/kaushan.css' rel='stylesheet' type='text/css'>
+    <link href='./css/droidSerif.css' rel='stylesheet' type='text/css'>
+    <link href='./css/robotoSlab.css' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo.ico"/>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top" style="background-color: #212529; "id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">EasyShop</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" id="a-active"  href="myproducts.html">My Products</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" id="a-active"  href="cart.html">My Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="a-active"  href="">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <!-- ALL PRODUCTS-->
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">My Products</h2>
+      <!--  <a class="nav-link add-link" id="a-active" data-toggle="modal" href="#addModal">Add Products</a>
+        <h3 class="section-subheading text-muted">text here</h3> -->
+      </div>
+      <br>
+
+      <div class="container">
+          <div class="card-columns">
+                <div class="card card-home">
+                        <img class="card-img-top" src="img/c4.jpg" alt="Card image" >
+                        <div class="card-body">
+                          <h4 class="card-title">Product name</h4>
+                          <h5>Price</h5>
+                          <button class="btn btn-primary signin-link" data-toggle="modal" href="#signinModal" id="see-p">Info Product</button>
+                        </div>
+                      </div>
+                      <div class="card  card-home">
+                            <img class="card-img-top" src="img/shoes.jpg" alt="Card image" >
+                            <div class="card-body">
+                              <h4 class="card-title">Product name</h4>
+                              <h5>Price</h5>
+                              <button class="btn btn-primary myproduct-link" data-toggle="modal" href="#myproductModal" id="see-p">Info Product</button>
+                            </div>
+                          </div>
+          </div>
+      </div>
+
+      
+      <!--Modal My Products-->
+
+      <div class="myprouct-modal modal fade" id="myproductModal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="modal-body">
+                      <h2 class="text-uppercase">Product Name</h2>
+                      <br>
+                      <div id="product-info">
+                          <label for="Quantity">Quantity</label>
+                          <input class="form-control" type="number" value="1"  min="1" id="u-amount">
+                          <label for="Price" id="my-price">Price</label>
+                          <input class="form-control" type="number" value="1.00"min="0.00" step="0.05" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency"  id="m-price" />                           
+                          <textarea class="form-control" id="my-des" rows="3" ></textarea>                
+                        </div>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close</button>
+                        <button class="btn btn-primary" type="button">Delete</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal add product -->
+    <div class="add-modal modal fade" id="addModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                            <label for="Product">Product name:</label>
+                            <input class="form-control" type="text" name="name" id="p-name">
+                            <label for="Product">Product description:</label>
+                            <textarea class="form-control" id="p-des" rows="3"></textarea>
+                            <label for="Product">Price:</label>
+                            <input class="form-control" type="number" value="1.00"min="0.00" step="0.05" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency"  id="p-price" />
+                            <label for="Product">Amount:</label>
+                            <input class="form-control" type="number" value="1"  min="1" id="amount">
+                            <label for="Product">Category:</label>
+                            <select class="custom-select mr-sm-2" id="cat">
+                              <option selected>Choose...</option>
+                              <option value="1">Clothes</option>
+                              <option value="2">Shoes</option>
+                              <option value="3">Accesories</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button type="button" class="btn btn-primary">ADD</button>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal products-->
+
+              <div class="signin-modal modal fade" id="signinModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">SIGNIN</h2>
+                  <label>Name:</label>
+                  <input class="form-control" type="text" name="name" id="name">
+                  <label>Lastname:</label>
+                  <input class="form-control" type="text" name="lastname" id="lastname">
+                  <label>Email:</label>
+                  <input class="form-control" type="email" name="email" id="email">
+                  <label>Password:</label>
+                  <input class="form-control" type="password" name="password" id="password">
+                  <br>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">Signin</button>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; EasyShop 2018</span>
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

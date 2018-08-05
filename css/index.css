@@ -1,0 +1,73 @@
+input#amount-w {
+    width: 63px;
+    position: relative;
+    top: -38px;
+    left: 109px;
+  }
+  img.media-object {
+    position: relative;
+    left: -10px;
+}
+a#a-active {
+    width: 155px;
+}
+input#u-amount {
+    width: 65px;
+}
+.card-columns {
+    width: 1134px;
+    /* height: 385px; */
+}
+input#m-price {
+    width: 83px;
+}
+input#u-amount {
+    width: 65px;
+    position: relative;
+    top: -41px;
+    left: 71px;
+}
+input#m-price {
+    width: 83px;
+    position: relative;
+    top: -69px;
+    left: 59px;
+}
+label#my-price {
+    position: relative;
+    top: -29px;
+}
+button.btn.btn-primary {
+    position: relative;
+    top: -21px;
+}
+.card-cart  {
+    height: 389px;
+}
+textarea#my-des {
+    position: relative;
+    top: -56px;
+    left: -6px;
+}
+img{
+    width: 300px;
+    height: 370px;
+}
+.card.card-home {
+    height: 467px;
+}
+button#see-p {
+    position: relative;
+    left: 197px;
+    top: -60px;
+}
+input#all-amount {
+    width: 78px;
+    position: relative;
+    top: -60px;
+    left: 194px;
+}
+a#cs {
+    position: relative;
+    width: 200px;
+}
